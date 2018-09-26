@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Currency Converter</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet" /> 
+    <link rel="stylesheet" type="text/css" href="./converter.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>Currency Conversion </h1>
+        <p>Enter the amount of Bitcoins you want to convert into Dollars</p>
+        <div class="conversionWrapper">
+            <div class="inputWrapper">
+                <span>₿</span>
+                <input type="number" name="bitcoin" class="bitcoin" placeholder="0.00" step="0.01" />
+            </div><!-- .inputWrapper -->
+            <div class="inputWrapper">
+                <span>$</span>
+                <input type="number" name="dollars" class="dollars" placeholder="0.00" step="0.01" disabled />
+            </div><!-- .inputWrapper -->
+            <button class="convertButton">Convert</button>
+        </div><!-- .conversionWrapper -->
+    </div><!-- .container -->
+    <script src="./converter.js"></script>
+</body>
+</html>
