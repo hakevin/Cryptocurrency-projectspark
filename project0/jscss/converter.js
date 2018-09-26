@@ -12,8 +12,10 @@ bitcoinField.addEventListener("input", moneyConvert);
 
 function moneyConvert()
 {
-    const endpoint = 'https://api.cryptonator.com/api/ticker/' + basecurrency + '-usd';
     const basecurrency = document.getElementById("basecurrency").value;
+    const endpoint = 'https://api.cryptonator.com/api/ticker/' + basecurrency + '-usd';
+    
+    
     fetch(endpoint) 
         .then( response => response.json())
         .then(data => 
