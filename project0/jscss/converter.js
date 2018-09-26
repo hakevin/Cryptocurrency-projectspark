@@ -1,8 +1,7 @@
 
 
 
-const basecurrency = document.getElementById("basecurrency").value;
-const endpoint = 'https://api.cryptonator.com/api/ticker/' + basecurrency + '-usd';
+
 
 const bitcoinField = document.querySelector(".bitcoin");
 const dollarsField = document.querySelector(".dollars");
@@ -13,7 +12,8 @@ bitcoinField.addEventListener("input", moneyConvert);
 
 function moneyConvert()
 {
-    
+    const endpoint = 'https://api.cryptonator.com/api/ticker/' + basecurrency + '-usd';
+    const basecurrency = document.getElementById("basecurrency").value;
     fetch(endpoint) 
         .then( response => response.json())
         .then(data => 
@@ -27,8 +27,6 @@ function moneyConvert()
             });    
 
 }
-
-
 /* 
 
 const requestAnimePromise = id => {
