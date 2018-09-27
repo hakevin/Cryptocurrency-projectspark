@@ -4,7 +4,6 @@ const bitcoinField = document.querySelector(".bitcoin");
 const dollarsField = document.querySelector(".dollars");
 
 
-/* Crypto compare current API */
 /* async await */
 let moneyConvert = async function () {
     const basecurrency = document.getElementById("basecurrency").value;
@@ -33,5 +32,4 @@ let updateContent = function () {
 }
 
 document.querySelector(".convertButton").addEventListener("click", moneyConvert);
-bitcoinField.addEventListener("input", moneyConvert);
 
