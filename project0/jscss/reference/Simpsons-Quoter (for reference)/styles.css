@@ -1,0 +1,84 @@
+@font-face {
+    font-family: 'simpsons-font';
+    src: url('./util/fonts/simpsons-font/Simpsonfont.ttf') format('truetype');
+}
+
+body {
+    background: skyblue;
+    text-align: center;
+}
+
+header {
+    text-align: center;
+}
+
+header > h1, header > h2 {
+    font-family: 'simpsons-font';
+    color: white;
+    text-shadow: 0 0 4px black;
+}
+
+header > h1 {
+    margin: 30px 0 0;
+    font-size: 5rem;
+    transition: all 500ms linear;
+    /* animation: simpsons-intro 5s normal; */
+}
+
+header > h2 {
+    font-size: 1.8rem;
+    margin: 0;
+    /* animation: simpsons-intro 8s normal; */
+}
+
+@keyframes simpsons-intro {
+    0% { opacity: 0; font-size: 0;}
+    25% { opacity: 0 }
+    50% { opacity: 1;}
+    100% { opacity: 1; }
+}
+
+#main-content-container {
+    display: flex;
+    flex-direction: row;
+
+    width: 75%;
+    margin: 25px auto;
+    border: 4px yellow double;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, .8);
+}
+
+#main-content-container.reversed {
+    flex-direction: row-reverse;
+}
+
+#character-img {
+
+}
+
+/* Hold the Name and Quote */
+#content-container {
+    flex-grow: 1;
+}
+
+#character-name {
+    padding: 15px;
+    height: 25%;
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'simpsons-font', cursive;
+}
+
+#character-quote {
+    padding: 25px;
+    height: 75%;
+    text-align: center;
+    font-size: 1.7rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+
+#character-quote::before, #character-quote::after {
+    content: '"';
+}
