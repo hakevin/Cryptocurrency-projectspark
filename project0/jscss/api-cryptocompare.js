@@ -1,14 +1,18 @@
 /* Simpsons async style Final! */
 
-const bitcoinField = document.querySelector(".bitcoin");
-const dollarsField = document.querySelector(".dollars");
+
+const cryptoField = document.querySelector(".crypto");
+const fiatField = document.querySelector(".fiat");
 
 
 /* Crypto compare current API */
 /* async await */
 let moneyConvert = async function () {
-    const basecurrency = document.getElementById("basecurrency").value;
-    const endpoint = 'https://min-api.cryptocompare.com/data/price?fsym=' + basecurrency + '&tsyms=USD';
+    const cryptocurrency = document.getElementById("cryptocurrency").value;
+    const fiatcurrency = document.getElementById("fiatcurrency").value;
+    /* const endpoint = 'https://api.cryptonator.com/api/ticker/' + cryptocurrency + '-' + fiatcurrency; */
+    const endpoint = 'https://min-api.cryptocompare.com/data/price?fsym=' + cryptocurrency + '&tsyms=' + fiatcurrency;
+    /* const endpoint = 'https://cors.io/?https://chasing-coins.com/api/v1/convert/' + cryptocurrency + '/' + fiatcurrency; */
 
     try {
         const response = await fetch(endpoint);
@@ -23,15 +27,15 @@ let moneyConvert = async function () {
 let updateContent = function () {
     console.log(data);
 
-    /* const bitcoinAmount = data.ticker.price; */
-    const bitcoinAmount = data.USD;
-    const bitcoin = bitcoinField.value;
-    const dollars = (bitcoin * bitcoinAmount).toFixed(2);
-    dollarsField.value = dollars;
+    /* const cryptoAmount = data.ticker.price; */
+    const cryptoAmount = data.USD;
+    /* const cryptoAmount = data.result; */
+    const crypto = cryptoField.value;
+    const fiat = (crypto * cryptoAmount).toFixed(2);
+    fiatField.value = fiat;
 
 }
 
 document.querySelector(".convertButton").addEventListener("click", moneyConvert);
-bitcoinField.addEventListener("input", moneyConvert);
-
-
+cryptoField.addEventListener("input", moneyConvert);
+fiatField.addEventListener("input", moneyConvert);
