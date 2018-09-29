@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    background: burlywood;
+    font-size: 30px;
+    font-family: sans-serif;
+}
+
+#wrapper {
+    width: 70%;
+    min-height: 100vh;
+    margin: 0 auto;
+    background-color: bisque;
+    text-align: center;
+}
+
+header {
+    padding-top: 30px;
+}
+
+header > h1 {
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+li {
+    padding: 5px;
+    margin: 10px;
+    background: sandybrown;
+    border: 3px ridge tan;
+    box-shadow: 3px 3px 3px 2px grey;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+li:hover {
+    border-color: chocolate;
+}

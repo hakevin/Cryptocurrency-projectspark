@@ -1,4 +1,5 @@
 /* Simpsons async style Final! */
+/* 3rd backup for USD only */
 
 
 const cryptoField = document.querySelector(".crypto");

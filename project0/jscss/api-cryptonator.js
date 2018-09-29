@@ -1,5 +1,7 @@
 /* Simpsons async style Final! */
 
+/* 2nd backup for select crypto and large fiat */
+
 
 const cryptoField = document.querySelector(".crypto");
 const fiatField = document.querySelector(".fiat");

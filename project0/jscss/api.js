@@ -1,5 +1,6 @@
 /* Simpsons async style Final! */
 
+/* main api utilizing a proxy server */
 
 const cryptoField = document.querySelector(".crypto");
 const fiatField = document.querySelector(".fiat");
