@@ -20,27 +20,6 @@ let getQuoteUsingAsync = async function() {
 }
 
 
-/* Promise */
-let getQuoteUsingPromise = function() {
-    fetch(apiUrl)
-        // This happens when data comes back in
-        .then( (response) => {
-            // Return unwrapped promise object for next chaining operation
-            return response.json();
-        })
-            // Utilize unwrapped promise as javascript object
-        .then( (data) => {
-            state = data[0];
-            updateContent();
-        })
-        // This happens if there is a problem with the request
-        .catch( (error) => {
-            alert('oh no :(');
-            console.log(error);
-        });
-}
-
-
 
 let updateContent = function() {
     console.log(state);

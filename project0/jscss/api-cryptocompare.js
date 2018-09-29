@@ -4,10 +4,10 @@ const bitcoinField = document.querySelector(".bitcoin");
 const dollarsField = document.querySelector(".dollars");
 
 
+/* Crypto compare current API */
 /* async await */
 let moneyConvert = async function () {
     const basecurrency = document.getElementById("basecurrency").value;
-    /* const endpoint = 'https://api.cryptonator.com/api/ticker/' + basecurrency + '-usd'; */
     const endpoint = 'https://min-api.cryptocompare.com/data/price?fsym=' + basecurrency + '&tsyms=USD';
 
     try {
@@ -32,4 +32,6 @@ let updateContent = function () {
 }
 
 document.querySelector(".convertButton").addEventListener("click", moneyConvert);
+bitcoinField.addEventListener("input", moneyConvert);
+
 

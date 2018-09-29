@@ -1,3 +1,37 @@
+/*  OG Promise  */
+
+
+const bitcoinField = document.querySelector(".bitcoin");
+const dollarsField = document.querySelector(".dollars");
+
+document.querySelector(".convertButton").addEventListener("click", moneyConvert);
+bitcoinField.addEventListener("input", moneyConvert);
+
+
+function moneyConvert()
+{
+    const basecurrency = document.getElementById("basecurrency").value;
+    const endpoint = 'https://api.cryptonator.com/api/ticker/' + basecurrency + '-usd';
+    
+    
+    fetch(endpoint) 
+        .then( response => response.json())
+        .then(data => 
+            {
+        
+            const bitcoinAmount = data.ticker.price;
+            const bitcoin = bitcoinField.value;
+            const dollars = (bitcoin * bitcoinAmount).toFixed(2);
+             dollarsField.value = dollars;
+    
+            });    
+
+} 
+ 
+
+
+
+
 /*  OG  */
  
 /* let state;
@@ -88,36 +122,7 @@ let getConversion = async function(){
     
   
     
-/*  OG Promise  */
 
-
-const bitcoinField = document.querySelector(".bitcoin");
-const dollarsField = document.querySelector(".dollars");
-
-document.querySelector(".convertButton").addEventListener("click", moneyConvert);
-bitcoinField.addEventListener("input", moneyConvert);
-
-
-function moneyConvert()
-{
-    const basecurrency = document.getElementById("basecurrency").value;
-    const endpoint = 'https://api.cryptonator.com/api/ticker/' + basecurrency + '-usd';
-    
-    
-    fetch(endpoint) 
-        .then( response => response.json())
-        .then(data => 
-            {
-        
-            const bitcoinAmount = data.ticker.price;
-            const bitcoin = bitcoinField.value;
-            const dollars = (bitcoin * bitcoinAmount).toFixed(2);
-             dollarsField.value = dollars;
-    
-            });    
-
-} 
- 
 
 
 
