@@ -27,31 +27,22 @@
       </div>
     </header>
 
-    <section id="subscribe">
-      <div class="container">
-        <h1>Weekly Newsletter</h1>
-        <form>
-          <input type="email" placeholder="Enter Email...">
-          <button type="submit" class="button_1">Direct Message</button>
-        </form>
-      </div>
-    </section>
-
-
+<!-- main body start  -->
     <section id="main">
       <div class="container">
         <article id="bottom-bar">
-          <h1 class="page-title">Crypto to U.S Fiat</h1>     
+          <h1 class="page-title">Tools</h1>     
           <p>
             <div class="container">
-              <h1>Currency Conversion </h1>
-              <p>Select from the dropdown the crypto you want to convert into fiat</p>
-              <div class="conversionWrapper">
-                  <div class="inputWrapper">
+              <h1>Currency Converter </h1>
+              <p>Select from the dropdown a crypto and a fiat pair.</p>
+              <div>
+                  <div>
+                    
                       <span> 
                        <table><td> <!-- <input id="fromAmount" type="text"> --></td>
                       
-                      
+                        ₿
                         <select id="cryptocurrency">
                             <option value="BTC"> Bitcoin (BTC) </option>
                             <option value="ETH"> Ethereum (ETH) </option>
@@ -71,26 +62,19 @@
                       
                       </table> 
 
-
-
                       </span>
-
-                      <span>
-                      <p>₿
+                      FR:
+                      
                       <input type="number" name="crypto" class="crypto" placeholder="0.00" step="0.01" />
-                      </p>
+                      
                   </div><!-- .inputWrapper -->
-                  <div class="inputWrapper">
+                  <div>
 
-
-                    
-                    
-                    
-                    
+    
                       <span> 
                           <table><td> <!-- <input id="fromAmount" type="text"> --></td>
                          
-                         
+                            $
                            <select id="fiatcurrency">
                                <option value="USD"> USD </option>
                                <option value="GBP"> Great British Pound (GBP) </option>
@@ -104,60 +88,33 @@
                             
                            
                            </select>
-                         
+
                          </table> 
    
-   
-   
                          </span>
-                    
-                      $</span>
+                         TO:
+                      <!-- <p></p></span> -->
                       <input type="number" name="fiat" class="fiat" placeholder="0.00" step="0.01" disabled />
-                  </div><!-- .inputWrapper -->
+                  </div>
                   <button class="convertButton">Convert</button>
-              </div><!-- .conversionWrapper -->
-          </div><!-- .container -->
+              </div>
+         <!--  </div> --><!-- .container -->
           </p>
-         
     
-
-
-
-
-
-
-
-
-
-        <p class="dark">
-          This section features conversions for several lesser known currencies. 
-          </p>
-        </article>
-
-       <!--  <aside id="sidebar">
-          <div class="dark">
-            <h3>Questions or Concerns</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec varius auctor lacus nec feugiat. Phasellus sit amet ex ipsum. Praesent pharetra tincidunt tempor. Etiam velit eros, dapibus eget porta in, lacinia et magna</p>
-          </div>
-        </aside> -->
       </div>
     </section>
+    <!-- main body end -->
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <footer>
+    <footer id = "api">
+        <section id="subscribe">
+            <div class="container">
+              <h1>Subscribe for weekly updates ...</h1>
+              <form>
+                <input type="email" placeholder="Enter Email...">
+                <button type="submit" class="button_1">Direct Message</button>
+              </form>
+            </div>
+          </section>
       <p>hakevin</p>
     </footer>
 

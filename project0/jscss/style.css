@@ -103,7 +103,7 @@ header a:hover{
 #subscribe{
   padding:20px;
   color:#ffffff;
-  background:#35424a
+  background:#35424a;
 }
 
 #subscribe h1{
@@ -171,10 +171,24 @@ ul#services li{
 }
 
 footer{
-  padding:20px;
-  margin-top:0px;
-  color:#ffffff;
-  background-color:blue;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+  /*  margin-top: 360px; */
+   padding-bottom: 10px;
+   background-color: blue;
+   color: white;
+   text-align: center;
+}
+
+footer#api{
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  margin-top: 360px;
+  padding-bottom: 10px;
+  background-color: blue;
+  color: white;
   text-align: center;
 }
 
