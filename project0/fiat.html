@@ -41,40 +41,41 @@
     <section id="boxes">
       <div class="container">
         <div class="box">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRr5yrnS_EynaNUIcQUB-wdtvH5tCMj9Ks2u-q-pOzvBELZ7VLM" height = "100" width = "300">
-          <h3>U.S Dollars</h3>
-          <p>The king of all currencies.</p>
+          <button onclick="usdFunction()"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRr5yrnS_EynaNUIcQUB-wdtvH5tCMj9Ks2u-q-pOzvBELZ7VLM" height = "100" width = "300"></button>
+          <!-- <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRr5yrnS_EynaNUIcQUB-wdtvH5tCMj9Ks2u-q-pOzvBELZ7VLM" height = "100" width = "300"> -->
+          <p>USD</p>
+          <p id="usdbutton"></p>
         </div>
 
         <div class="box">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfr-dPDboKYiQyR007GWFcjTFXLnomyNO9N6SNVgXDzl3x1UbT" height = "100" width = "300">
-            <h3>Euro</h3>
-            <p>Currently, 19 of 28 member states use the euro; this group of states is known as the eurozone or euro area. </p>
+            <button onclick="eurFunction()"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfr-dPDboKYiQyR007GWFcjTFXLnomyNO9N6SNVgXDzl3x1UbT" height = "100" width = "300"></button>
+            <p>Euro</p>
+          <p id="eurbutton"></p>
           </div>
 
         
         <div class="box">
-          <img src="http://coinomy.io/wp-content/uploads/2018/08/Vietnamese-Dong-768x768-1-256x256.jpg" height = "100" width = "300">
-          <h3>Vietnamese Dong</h3>
-          <p>One of the highest inflating currencies in Asia. Often traded for USDs.  </p>
+            <button onclick="vndFunction()"><img src="http://coinomy.io/wp-content/uploads/2018/08/Vietnamese-Dong-768x768-1-256x256.jpg" height = "100" width = "300"></button>
+          <p>Vietnamese Dong</p>
+          <p id="vndbutton"></p>
         </div>
         
         <div class="box">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnEWtsJURN8PH1Fh5YEqgO6LOtse8J-eTrPK6a4UXIUhq5HV3o" height = "100" width = "300" >
-          <h3>Chinese Yuan</h3>
-          <p>Based on global trade of 13 countries.</p>
+            <button onclick="cnyFunction()"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnEWtsJURN8PH1Fh5YEqgO6LOtse8J-eTrPK6a4UXIUhq5HV3o" height = "100" width = "300" ></button>
+          <p>Chinese Yuan</p>
+          <p id="cnybutton"></p>
         </div>
 
         <div class="box">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsuxKWT6DpvjxozPVNxknCva5z8xmSKcGFSzyWSCUUfioyawzz" height = "100" width = "300">
-            <h3>Russian Ruble</h3>
-            <p> Faced a financial crisis between 2014-2017 concerning the government's manipulation of the inflation and interest rates. </p>
+            <button onclick="rubFunction()"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsuxKWT6DpvjxozPVNxknCva5z8xmSKcGFSzyWSCUUfioyawzz" height = "100" width = "300"></button>
+            <p>Russian Ruble</p>
+          <p id="rubbutton"></p>
           </div>
 
           <div class="box">
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcYqY2W28HZKukeI014HJjQaJI1pD-jlpqP_S4HAUkboYILquWqA"  height = "100" width = "300">
-              <h3>Venezuelan Bolivar</h3>
-              <p>Meme, joke currency. Inflation sent the currency into worthlessness. Maduro attemps to use a cryptocurrency called the Petro.</p>
+              <button onclick="vefFunction()"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcYqY2W28HZKukeI014HJjQaJI1pD-jlpqP_S4HAUkboYILquWqA"  height = "100" width = "300"></button>
+              <p>Venezuelan Bolivar</p>
+          <p id="vefbutton"></p>
             </div>
         
       </div><!-- container -->
@@ -93,5 +94,6 @@
           </section>
       <p>hakevin</p>
     </footer>
+    <script src="./jscss/functional.js"></script>
   </body>
 </html>

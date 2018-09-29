@@ -44,40 +44,40 @@
     <section id="boxes">
       <div class="container">
         <div class="box">
-          <img src="https://en.bitcoin.it/w/images/en/2/29/BC_Logo_.png">
-          <h3>Bitcoin</h3>
-          <p>The first blockchain created by Satoshi Nakamoto in 2009. Genesis block read "The Times 03/Jan/2009 Chancellor on brink of second bailout for banks."</p>
+          <button onclick="bitFunction()"><img src="https://en.bitcoin.it/w/images/en/2/29/BC_Logo_.png"></button>
+          <p>Bitcoin</p>
+          <p id="bitbutton"></p>
         </div>
 
         <div class="box">
-            <img src="https://s2.coinmarketcap.com/static/img/coins/200x200/1027.png">
-            <h3>Ethereum</h3>
-            <p>Introduced in  2015 as a platform to release ICOs and dApps. Proposed by Vitalik Buterin and hardforked in 2016 into Ethereum Classic. </p>
+            <button onclick="ethFunction()"><img src="https://s2.coinmarketcap.com/static/img/coins/200x200/1027.png"></button>
+            <p>Ethereum</p>
+          <p id="ethbutton"></p>
           </div>
 
         
         <div class="box">
-          <img src="https://data.ripple.com/v2/currencies/xrp.svg">
-          <h3>Ripple</h3>
-          <p>Ripple is a real-time gross settlement system, currency exchange and remittance network created by Ripple Labs Inc. Seeks to replace Swift.  </p>
+            <button onclick="xrpFunction()"><img src="https://data.ripple.com/v2/currencies/xrp.svg"></button>
+          <p>XRP</p>
+          <p id="xrpbutton"></p>
         </div>
         
         <div class="box">
-          <img src="https://www.cryptocompare.com/media/12318177/ada.png">
-          <h3>Cardano</h3>
-          <p>3rd generation, peer reviewed and provably secure.</p>
+            <button onclick="adaFunction()"><img src="https://www.cryptocompare.com/media/12318177/ada.png"></button>
+          <p>Cardano</p>
+          <p id="adabutton"></p>
         </div>
 
         <div class="box">
-            <img src="https://chasing-coins.com/api/v1/std/logo/MKR">
-            <h3>Maker</h3>
-            <p> An Ethereum based protocol that provides an auditable stable token pegged to the USD. </p>
+            <button onclick="mkrFunction()"><img src="https://chasing-coins.com/api/v1/std/logo/MKR"></button>
+            <p>Maker</p>
+            <p id="mkrbutton"></p>
           </div>
 
           <div class="box">
-              <img src="https://www.cryptocompare.com/media/19684/doge.png">
-              <h3>Dogecoin</h3>
-              <p>A Meme, joke coin based on prrof of work. Ranked 20.</p>
+              <button onclick="dogeFunction()"><img src="https://www.cryptocompare.com/media/19684/doge.png"></button>
+              <p>Dogecoin</p>
+              <p id="dogebutton"></p>
             </div>
         
       </div>
@@ -98,5 +98,6 @@
           </section>
       <p>hakevin</p>
     </footer>
+    <script src="./jscss/functional.js"></script>
   </body>
 </html>
