@@ -1,6 +1,5 @@
 function bitFunction() {
     document.getElementById("bitbutton").innerHTML = "The first blockchain created by Satoshi Nakamoto in 2009. Genesis block read -The Times 03/Jan/2009 Chancellor on brink of second bailout for banks!";
-    
 }
 
 function ethFunction() {
@@ -20,12 +19,11 @@ function mkrFunction() {
 }
 
 function dogeFunction() {
-document.getElementById("dogebutton").innerHTML = "A Meme, joke coin based on prrof of work. Ranked 20.";
+document.getElementById("dogebutton").innerHTML = "A Meme, joke coin based on proof of work. Ranked 20.";
 }
 
 function usdFunction() {
     document.getElementById("usdbutton").innerHTML = "The king of all currencies.!";
-    
 }
 
 function eurFunction() {
