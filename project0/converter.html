@@ -31,18 +31,17 @@
     <section id="main">
       <div class="container">
         <article id="bottom-bar">
-          <h1 id="htools">Tools</h1>     
+          <h1 id="htools">Currency Converter Tool: Select from the dropdown a crypto and a fiat pair.</h1>     
           <p>
             <div class="container">
-              <h1 id="htools">Currency Converter </h1>
-              <p id = "htools">Select from the dropdown a crypto and a fiat pair.</p>
+              <!-- <h1 id="htools">Currency Converter </h1> -->
+              <!-- <p id = "htools"></p> -->
               <div class = "converter">
                   <div>
                     
                       <span> 
-                       <table><td> <!-- <input id="fromAmount" type="text"> --></td>
-                      
-                        ₿
+                        <p>₿</p>
+                       <table><td> <!-- <input id="fromAmount" type="text"> --></td>                        
                         <select id="cryptocurrency">
                             <option value="BTC"> Bitcoin (BTC) </option>
                             <option value="ETH"> Ethereum (ETH) </option>
@@ -56,15 +55,10 @@
                             <option value="ENG"> Enigma (ENG) </option>
                             <option value="MKR"> Maker (MKR) </option>
                             <option value="DAI"> DAI (pegged-USD) </option>
-              
-                        
                         </select>
-                      
+                        <p>FR:</p>
                       </table> 
-
-                      </span>
-                      FR:
-                      
+                      </span>                                           
                       <input type="number" name="crypto" class="crypto" placeholder="0.00" step="0.01"/>
                       
                   </div><!-- .inputWrapper -->
@@ -72,9 +66,9 @@
 
     
                       <span> 
-                          <table><td> <!-- <input id="fromAmount" type="text"> --></td>
-                         
-                            $
+                          <p>$</p>
+                          <table><td> <!-- <input id="fromAmount" type="text"> --></td>                        
+                            <!-- $ -->
                            <select id="fiatcurrency">
                                <option value="USD"> USD </option>
                                <option value="GBP"> Great British Pound (GBP) </option>
@@ -84,23 +78,18 @@
                                <option value="RUB"> Russian Ruble (RUB) </option>
                                <option value="CNY"> Chinese Yuan (CNY) </option>
                                <option value="VND"> Vietnamese Dong (VND) </option>
-                               <option value="VEF"> Venezuelan Bolivar (VEF) </option>
-                            
-                           
+                               <option value="VEF"> Venezuelan Bolivar (VEF) </option>                          
                            </select>
-
-                         </table> 
-   
+                           <p> TO:</p>
+                         </table>   
                          </span>
-                         TO:
-                      <!-- <p></p></span> -->
                       <input type="number" name="fiat" class="fiat" placeholder="0.00" step="0.01" disabled />
                   </div>
-                  <button class="convertButton">Convert</button>
+                  <!-- <button class="convertButton">Convert</button> -->
               </div>
          <!--  </div> --><!-- .container -->
           </p>
-    
+          <button class="convertButton">Convert</button>
       </div>
     </section>
     <!-- main body end -->

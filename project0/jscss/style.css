@@ -1,6 +1,5 @@
 body{
-  font: 15px/1.5 'Ubuntu', sans-serif;
-  
+  font: 15px/1.5 'Ubuntu', sans-serif;  
   padding:0;
   margin:0;
   background-color: lightblue;
@@ -41,7 +40,7 @@ header{
   color:#ffffff;
   padding-top:30px;
   min-height:70px;
-  border-bottom:blue 3px solid;
+  border-bottom:blue 6px solid;
 }
 
 header a{
@@ -158,7 +157,7 @@ article#botom-bar{
 
 /* Graphs */
 
-ul {/* 3 boxes in graphs for btc, eth, etc */
+ul                                    {/* 3 boxes in graphs for btc, eth, etc */
   display: flex;
 }
 
@@ -174,7 +173,6 @@ footer{
    left: 0;
    bottom: 0;
    width: 100%;
-  /*  margin-top: 360px; */
    padding-bottom: 10px;
    background-color: blue;
    color: white;
@@ -185,7 +183,7 @@ footer#api{
   left: 0;
   bottom: 0;
   width: 100%;
-  margin-top: 180px;
+  margin-top: 140px;
   padding-bottom: 10px;
   background-color: blue;
   color: white;
