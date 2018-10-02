@@ -120,6 +120,12 @@ header a:hover{
   width:250px;
 }
 
+/* Converter */
+
+span > p {
+  margin: 0;
+}
+
 /* Boxes */
 #boxes{
   margin-top:20px;
@@ -161,7 +167,7 @@ ul                                    {/* 3 boxes in graphs for btc, eth, etc */
   display: flex;
 }
 
-ul#services li{
+ul#signal li{
   list-style: none;
   padding:20px;
   border: #cccccc solid 1px;
@@ -183,7 +189,7 @@ footer#api{
   left: 0;
   bottom: 0;
   width: 100%;
-  margin-top: 140px;
+  margin-top: 235px;
   padding-bottom: 10px;
   background-color: blue;
   color: white;
@@ -194,9 +200,9 @@ footer#api{
     padding-bottom:20px;
   }
 
-  #background h1{
+ /*  #background h1{
     margin-top:40px;
-  }
+  } */
 
   #subscribe button, .quote button{
     display:block;
